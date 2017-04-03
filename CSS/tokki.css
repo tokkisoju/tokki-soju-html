@@ -1,0 +1,1167 @@
+/* GLOBAL CSS */
+html,
+body {
+  height: 100%;
+  background-color:white;
+  overflow: hidden;
+/*  -webkit-text-stroke: .15px;*/  
+  -webkit-font-smoothing: antialiased;
+
+}
+::selection {
+  background: #cc0000; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #cc0000; /* Gecko Browsers */
+}
+
+/*links*/
+a {
+	color:black;
+	text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index:2;
+}
+p
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.logo-small {
+	top:15px;
+}
+
+a.logo-rollover-small {
+	background:url(../images/Logo-Rollover-Small.png) no-repeat;
+	height:40px;
+}
+a.logo-rollover-small:hover {
+	background-position: 0 -20px;
+}
+
+
+/*CUSTOM SCROLLBARS *********/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+
+
+
+
+ /*FONTS *******/
+
+.font-roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-large-white {
+	font-family: 'Roboto', sans-serif;
+	font-size:120px;
+	color: #333333;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #333333;
+}
+
+.header-medium-white {
+	font-family: 'Roboto', sans-serif;
+	font-size:60px;
+	color: #333333;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #333333;
+}
+
+.header-medium-black {
+    font-family: 'Open Sans', sans-serif;
+    font-size:36px;
+    font-weight: bold;
+    color:#333333;
+}
+
+.header-small-black {
+    font-family: 'Open Sans', sans-serif;
+    font-size:24px;
+   /* font-weight: bold;*/
+    color:#333333;
+}
+
+
+
+
+
+
+
+/* NAVBAR ********************************************/
+.navbar-font-style {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size: 1em;
+	letter-spacing: .025em;
+	font-color:#333333;
+	color:#333333;
+	padding-left: 45px;
+ 	padding-right: 45px;
+  background:white;
+}
+/* toggle button size override */
+.navbar-toggle {
+  top:5px;
+  padding: 6px 4px;
+}
+.navbar {
+	background: red;
+}
+/* overrides bootstrap defaults for menu toggle icon */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  border-radius: 1px;
+}
+.button-find-tokki {
+  letter-spacing:.15em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+	font-size: 14px;
+	display: block;
+	position: relative;
+	right:40px;
+	margin-left:30px;
+/*	padding:3px;*/
+}
+li.button-find-tokki-mobile {
+	display:none;
+}
+.red-line-large {
+  display:block;
+  position: relative;
+  top:-5px;
+	left:-50px;
+	height:2px;
+	width:150%;
+	background-color:#CC0000;
+}
+/**********  NAVBAR BOOTSTRAP OVERRIDES *********************/
+
+.navbar-default {
+  background-color:white;
+  border-color: transparent;
+  height:40px;
+}
+.navbar-default .navbar-brand {
+  color: black;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #808080;
+  background-color: white;
+}
+.navbar-default .navbar-text {
+  color: black;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color:#cc3333;
+/*  background-color: white;*/
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: black;
+  background-color: #990000;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+
+/*BOOTSTRAP NAV OVERRIDES*/
+@media (min-width: 868px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 18px;
+  font-size:14px;
+}
+@media (max-width: 867px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: white;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 15px;
+    font-size:10px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+
+
+/*Remove nav button and replace with menu item*/
+@media only screen and (max-width : 981px) {
+    a.button-find-tokki {display:none;}
+    li.button-find-tokki-mobile {display:block;position:relative;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  HOME PAGE   *****************************************/
+
+/*
+ * BG IMAGE
+*/
+.bg-image {
+  width:100%;
+  height:100%;
+  background:url(../images/Tokki-Home-BG-Large.jpg)no-repeat center center;  
+   -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover
+}
+
+/* MAIN CONTENT CONTAINER */
+.container-center {
+    display:block;
+	position: absolute;
+	vertical-align: middle;
+	text-align: center;
+	width:500px;
+	height:650px;
+	padding:25px 15px 25px 15px;
+	left:20%;
+	top:0;
+	bottom:0;
+	margin:auto;
+    background:transparent;
+}
+.logo {
+	display:block;
+	position: relative;
+	width:100%;
+}
+.ghost-button-transition {
+  /*display: inline-block;*/
+  width: 200px;
+  padding: 8px;
+  color: #000;
+  border: 2px solid #000;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+.button-small {
+	padding:5px 15px 5px 15px;
+}
+.location {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.15em;
+	color:black;
+	text-align: center;
+	text-transform:uppercase;
+	margin-top:50px;
+	top:150px;
+	display: block;
+}
+.van-brunt {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.15em;
+	color:black;
+	text-align: center;
+	text-transform:uppercase;
+	display: block;
+}
+.red-line-small {
+	margin-top: 25px;
+    display:block;
+    position: relative;
+	height:2px;
+	width:100%;
+	background-color:#CC0000;
+}
+.text-center {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	color:black;
+	text-align: center;
+	margin:15px;
+	top:10px;
+	display:block;
+	position: relative;
+}
+.button-whatistokki {
+  letter-spacing:.15em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	display: block;
+	position: relative;
+	margin-top: 50px;
+	left:125px;
+	top:0px;
+}
+
+@media only screen  and (min-width : 501px) and (max-width: 1400px ) {
+/*HOME PAGE*/    
+.container-center {width:400px; height:550px;}    
+.location {font-size: 1.15em;margin-top:50px;top:50px;}
+.van-brunt {font-size: 1.15em;}
+.text-center {font-size: 1.35em; margin:15px;}
+.button-whatistokki {margin-top:40px;left:85px;padding:15px;}
+.navbar-font-style {font-size: 1em;letter-spacing:-.015em;padding-left:35px;padding-right:35px;}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 500px) {
+    /*NAVBAR MOBILE STYLES*/
+
+.button-find-tokki {position:absolute;right:5%; bottom:5%;border:none;}
+li.button-find-tokki-mobile {display: block;position: relative;}
+.button-find-tokki {display:none;}
+    /*HOME PAGE*/
+.container-center {width:80%; height:80%;left:10%;top:10px;}    
+.location {font-size: 1em;margin-top:20px;top:20px;}
+.van-brunt {font-size: 1em;}
+.text-center {font-size: 1.15em; margin:15px;}
+.button-whatistokki {margin-top:60px;left:30px;padding:15px;}
+.navbar-font-style {font-size:1.25em;letter-spacing:-.015em;padding-left:35px;padding-right:35px;}
+.bg-image {width:100%;height:100%;
+   background:transparent;   
+   -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
+}
+
+@media only screen and (max-width : 1000px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE ***********************************************/
+.about-bg-image {
+  display:block;
+  position: absolute;
+  width:auto;
+  height:auto;
+  min-height:700px;
+  max-height:1000px;
+  top:0;
+}
+
+.about-container {
+	display:block;
+	position:absolute;
+  left:40%;
+  height:100%;
+	width:750px;
+}
+
+.about-header {
+	display:inline-block;
+	position:relative;
+/*	top:175px;*/
+  top:10%;
+	width:100%;
+	margin:0 auto;
+	height:auto;
+  white-space: pre;
+}
+
+.about-body {
+	display:inline-block;
+	position:relative;
+	left:100px;
+	width:500px;
+/*	margin:0 auto;
+  margin-top:35px;*/
+}
+
+.button-about {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	display: block;
+	position: relative;
+	letter-spacing:.15em;
+	left:90px;
+	top:0px;
+}
+
+
+
+
+
+@media only screen and (max-width : 1200px) and (min-height: 900px) {
+  .about-bg-image {
+    background: red;
+    height:auto;
+    max-height:1000px;
+    width:100%;
+}
+.about-container {
+  background: yellow;
+}
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width :1300px) {
+.about-bg-image {
+left:-100px;
+}
+}
+
+
+
+@media only screen and (max-width : 1184px) {
+.about-bg-image {
+left:-200px;
+}
+.about-container {
+  left:32%;
+  width:750px;
+}
+}
+
+
+
+@media only screen and (max-width : 1075px) {
+.about-bg-image {
+left:-300px;
+}
+.about-container {
+  left:25%;
+}
+.about-header {
+  width:70%;
+}
+}
+
+
+
+@media only screen and (max-width : 860px) {
+.about-container {
+  transform:scale(.85,.85);
+  -webkit-transform:scale(.85,.85);
+  -o-transform:scale(.85,.85);
+  position: absolute;
+  left:25%;
+  height:1000px;
+  width:500px;
+  overflow-wrap:normal;
+  word-wrap: break-word;
+  top:0;
+}
+.about-bg-image {
+  left:-350px;
+}
+.about-header {
+  top:0%;
+  width:500px;
+  text-align: right;
+  white-space: normal;
+  overflow-wrap:normal;
+  word-wrap: break-word;
+}
+.about-body {
+    width:400px;
+    overflow-wrap:normal;
+  word-wrap: break-word;
+}
+}
+
+
+@media only screen and (max-width : 585px) {
+.about-container {
+  top:-50px;
+  transform:scale(.75,.75);
+  -webkit-transform:scale(.75,.75);
+  -o-transform:scale(.75,.75);
+}
+}
+
+
+@media only screen and (max-width : 480px) {
+.about-container {
+  position: absolute;
+  display:block;
+  top:-150px;
+  left:-30px;
+}
+.about-bg-image {
+}
+.about-header {
+  top:30px;
+  left:-20px;
+  transform:scale(.55,.55);
+  -webkit-transform:scale(.55,.55);
+  -o-transform:scale(.55,.55);
+}
+.about-body {
+  margin-top:-50px;
+  width:325px;
+}
+.button-about {
+  transform:scale(.8, .8);
+  -webkit-transform:scale(.8, .8);
+  -o-transform:scale(.8, .8);
+  top:-65px;
+  left:100px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE ***************/
+
+.contact-header-text {
+  display:block;
+  position:absolute;
+  top:40px;
+}
+.contact-column1 {
+  display:block;
+  position:absolute;
+  padding:10px;
+  height:100%;
+  width:45%;
+  right:50%;
+  
+}
+.contact-column2 {
+  display:block;
+  position:absolute;
+  padding:10px;
+  height:100%;
+  left:50%;
+  width:45%;
+}
+.contact-photo {
+  display:block;
+  position:relative;
+  width:400px;
+  height:auto;
+  top:25%;
+  margin-top:15px;
+}
+.contact-nametag {
+  display: block;
+  position: absolute;
+  line-height:3.75em;
+  text-align: right;
+  top:30%;
+  width:95%;
+  right:25px;
+}
+
+.contact-social-container {
+  display: block;
+  position: absolute;
+  right:10px;
+  width:100px;
+  height:auto;
+  padding:15px;
+  top:50%;
+}
+a.button-twitter,
+a.button-facebook,
+a.button-instagram {
+	display: block;
+  position: relative;
+  margin:15px;
+  opacity:.8;
+  -webkit-opacity:.8;
+  -o-opacity:.8;
+  cursor: pointer;
+}
+
+a.button-twitter:hover,
+a.button-facebook:hover,
+a.button-instagram:hover {
+  opacity: 1.0;
+  -webkit-opacity: 1.0;
+  -o-opacity: 1.0;
+}
+
+
+@media only screen and (max-width : 768px) {
+  .contact-header-text {
+    -webkit-transform:scale(.75,.75);
+    transform:scale(.75,.75);
+    -o-transform:scale(.75,.75);
+     top:20px;
+    left:-35px;
+  }
+  .contact-nametag {
+    -webkit-transform:scale(.75,.75);
+    transform:scale(.75,.75);
+    -o-transform:scale(.75,.75);
+    right:-20px;
+    width:140%;
+}
+.contact-social-container {
+    -webkit-transform:scale(.75,.75);
+    transform:scale(.75,.75);
+    -o-transform:scale(.75,.75);
+    top:40%;
+}
+.contact-photo {
+    -webkit-transform:scale(.75,.75);
+    transform:scale(.75,.75);
+    -o-transform:scale(.75,.75);
+    top:20%;
+    left:-50px;
+}
+}
+
+
+
+@media only screen and (max-width : 640px) {
+  .contact-header-text {
+    -webkit-transform:scale(.65, .65);
+    transform:scale(.65, .65);
+    -o-transform:scale(.65, .65);
+    top:20px;
+    left:-55px;
+  }
+  .contact-nametag {
+    -webkit-transform:scale(.65, .65);
+    transform:scale(.65, .65);
+    -o-transform:scale(.65, .65);
+    right:-40px;
+    top:25%;
+    width:150%;
+}
+.contact-social-container {
+    -webkit-transform:scale(.65, .65);
+    transform:scale(.65, .65);
+    -o-transform:scale(.65, .65);
+    top:35%;
+}
+.contact-photo {
+    -webkit-transform:scale(.65, .65);
+    transform:scale(.65, .65);
+    -o-transform:scale(.65, .65);
+    top:15%;
+    left:-100px;
+}
+}
+
+
+@media only screen and (max-width :500px) {
+  .contact-header-text {
+    -webkit-transform:scale(.5, .5);
+    transform:scale(.5, .5);
+    -o-transform:scale(.5, .5);
+    top:0px;
+    left:-125px;
+  }
+  .contact-nametag {
+    -webkit-transform:scale(.5, .5);
+    transform:scale(.5, .5);
+    -o-transform:scale(.5, .5);
+    left:-100px;
+    top:120px;
+    width:225%;
+    text-align: left;
+}
+.contact-social-container {
+    -webkit-transform:scale(.5, .5);
+    transform:scale(.5, .5);
+    -o-transform:scale(.5, .5);
+    top:185px;
+}
+.contact-photo {
+    -webkit-transform:scale(.5, .5);
+    transform:scale(.5, .5);
+    -o-transform:scale(.5, .5);
+    top:-0px;
+    left:-120px;
+}
+}
+
+
+
+
+
+
+
+/* PRESS PAGE ***************/
+.press-bg {
+  display:block;
+  position: absolute;
+  width:100%;
+  height:1080px;
+  background:url(../images/press-bg.png)no-repeat;  
+   -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover
+
+}
+
+.press-header-text {
+	display:inline-block;
+	position:absolute;
+	top:45px;
+	width:100%;
+	text-align: center;
+	vertical-align: center;
+}
+#rig {
+    max-width:900px;
+    height:100%;
+    padding:0;
+    text-align:center;
+    margin:250px auto 0 auto;
+    font-size:0; 
+    list-style:none;
+    overflow-y:scroll;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;
+    width:50%;
+    min-width:200px;
+    max-width:200px;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:25px;
+
+}
+        
+.rig-cell {
+    display:block;
+    position:relative;
+    overflow:hidden;
+
+}
+        
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    transition:all .2s;
+    opacity:.7;
+    -webkit-opacity:.7;
+    -o-opacity:.7;
+}
+
+#rig li:hover .rig-img {
+    opacity: 1.0;
+    -webkit-opacity: 1.0;
+    -o-opacity: 1.0;
+}
+
+/*@media (max-width: 9000px) {
+    #rig li {
+        width:50%;
+    }
+}*/
+
+@media only screen  and (max-width : 801px)
+{
+.press-bg {
+}
+.press-header-stripe {
+ top:50px;
+ height:60px;
+}
+.press-header-text {
+  display:inline-block;
+  position:absolute;
+  top:55px;
+  width:100%;
+  font-size:90px;
+  font-color:#000;
+  color:black;
+  text-align: center;
+  vertical-align: center;
+}
+
+}
+
+
+@media (max-width: 700px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+    /*#rig {
+    margin:150px auto 0 auto;
+}*/
+}
+
+@media (max-width: 500px) {
+#rig {
+    margin:200px auto 0 auto;
+}
+#rig li {
+    padding:auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHOTOS PAGE ***************/
+
+.photos-container {
+	position:fixed;
+	display: block;
+	margin-top:55px;
+	overflow-y:scroll;
+	max-width: 100%;
+	max-height: 100%;
+	width:100%;
+	height:100%;
+}
+.photo {
+	display: block;
+	width:60%;
+	height:auto;
+	margin: auto;
+	padding:10px 0px 0px 0px;
+}
+@media only screen and (max-width : 500px) {
+.photos-container {max-width:95%;max-height:95%;width:95%;height:95%;}
+.photo {width:95%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIND-TOKKI PAGE ***************/
+.find-tokki-container {
+	position:fixed !important;
+	overflow-y:scroll;
+	top:55px;
+	right:0%;
+	bottom:0%;
+	left:0%;
+  text-align:center;
+}
+/*mid-level content container*/
+.restaurants-content-container {
+	display: block;
+	position: relative;
+	width:90%;
+	height:auto;
+	margin:200px auto auto auto;
+}
+.spirits-content-container {
+  display: block;
+  position: relative;
+  width:90%;
+  height:auto;
+  margin:auto;
+}
+/*main header*/
+.find-tokki-header-text {
+	display:block;
+	position:absolute;
+  top:20px;
+	margin-left:3%;
+  line-height:1em;
+}
+/*restaurant header*/
+.location-header {
+	float:left;
+	text-align:left;
+	margin:auto;
+	width:100%;
+	height:60px;
+	padding-left:15px;
+}
+.borough-header {
+  float:left;
+  text-align:left;
+	display: block;
+	position: relative;
+  width: 100%;
+	height:40px;
+	margin:10px 0px 10px 0px;*/
+
+}
+/*location list text styles*/
+.location-text-bold {
+	display:block;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	color:#333333;
+	text-align:left;
+  margin-top:20px;
+}
+.location-text-regular {
+	display:block;
+	font-family: 'Roboto', sans-serif;
+	font-size:18px;
+	color:#333333;
+	text-align:left;
+}
+.location-text-link {
+    float:left;
+  text-align:left;
+	display:block;
+  font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	text-decoration: none;
+	color:#333333;
+}
+.location-text-phone{
+    float:left;
+  text-align:left;
+  font-family: 'Open Sans', sans-serif;
+	display:block;
+	font-size:16px;
+	color:#333333;
+	text-align:left;
+}
+.column {
+	display:inline-block;
+	position:relative;
+	margin:40px 5px auto 5px;
+	height:100%;
+	width:28%;
+  vertical-align: top;
+	line-height:1.8em;
+/*  background: yellow;*/
+}
+
+
+
+/*FIND-TOKKI MEDIA STYLES*/
+@media only screen and (max-width : 1500px) {
+.find-tokki-header-text {font-size: 110px;margin-left:20px;padding-left:20px;}
+
+}
+@media only screen and (max-width : 1185px) {
+.find-tokki-header-text {font-size: 90px;padding-left:20px;}
+.location-text-bold {font-size:22px;} .location-text-regular {font-size:16px;} a.location-text-link {font-size:14px;} .location-text-phone {font-size:14px;}
+.location-header {font-size:60px;}
+.header-medium-black {font-size:30px;}
+
+}
+@media only screen and (max-width : 817px) {
+ a.location-text-link {font-size:12px;}
+ .location-header {font-size:50px;}
+.find-tokki-header-text {font-size: 70px;padding-left:20px;}
+.location-text-bold {font-size:18px;} .location-text-regular {font-size:14px;} a.location-text-link {font-size:14px;} .location-text-phone {font-size:14px;}
+.location-header {font-size:42px;color:#333333;}
+.header-medium-black {font-size:20px;}
+
+}
+
+
+@media only screen and (max-width : 500px) {
+  .restaurants-content-container {margin-top:160px;}
+  .column {margin-top:20px;}
+a.location-text-link {font-size:10px;}
+.location-text-phone {font-size:10px;}
+.header-medium-black {font-size:16px;}
+.location-header {font-size:30px;}
+.location-text-bold {font-size:14px;} .location-text-regular {font-size:12px;}
+.find-tokki-container {overflow-y:scroll;}
+.find-tokki-header-text {font-size:60px;text-align: left;left:0%;}
+.find-tokki-content-container {display: block;	
+  position: absolute;	width:100%;	height:90%;	left:0%; right:0%;}
+
+}
+
+/*phone number detectiom*/
+a[href^=tel] {
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+}
+
