@@ -34,10 +34,10 @@
 <!--[if IE]><link rel="shortcut icon" href="JTNET images/icons/JTNET-Favicon-32x32.ico"><![endif]-->
 
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-<link rel="apple-touch-icon-precomposed" href="index.html">
+<link rel="apple-touch-icon-precomposed" href="">
 
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="index.html">
+<link rel="icon" href="">
 
   <title>TOKKI Soju</title>
 
@@ -49,8 +49,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="CSS/tokki.css">
-<!-- <link rel="stylesheet" type="text/css" href="CSS/fonts.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="CSS/media-queries.css"> -->
+<link rel="stylesheet" type="text/css" href="CSS/rooster2.css">
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
@@ -59,13 +58,14 @@
 <style>
 body {
     opacity: 1;
-    transition: 1s opacity;
+    transition: .3s opacity;
 }
 body.fade-out {
     opacity: 0;
     transition: none;
 }
 </style>
+
 
 
 
@@ -95,7 +95,7 @@ $(function() {
 });
 </script>
 
-<div class="container-fluid bg-image">                
+<div class="container-fluid Rooster-BG">                
 
 <!-- Navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
@@ -106,17 +106,18 @@ $(function() {
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                  </button>
-            <a href ="index.html" class="navbar-brand"><img src="images/tokki-logo-small-gray.png"></a>
+            <a href ="/index" class="navbar-brand"><img src="../images/tokki-logo-small-gray.png"></a>
           </div>      
           	<div class="collapse navbar-collapse" id="navbar-collapse">
-            <a href="find-tokki.html" class="navbar-btn navbar-right ghost-button-transition button-find-tokki button-small">FIND TOKKI</a> 
+            <a href="/find-tokki" class="navbar-btn navbar-right ghost-button-transition button-find-tokki button-small">FIND TOKKI</a> 
                 <ul class="nav navbar-nav navbar-right navbar-font-style text-right">
-                   <li class="active"><a href="index.html">Home</a>
-                   <li class=""><a href="about.html">About</a>
-                   <li class=""><a href="press.html">Press</a>
-                   <li class=""><a href="photos.html">Photos</a>
-                   <li class=""><a href="contact.html">Contact</a>
-                   <li class="button-find-tokki-mobile"><a href="find-tokki.html">Find Tokki</a>
+                   <li class="rooster-list active"><a href="/rooster">ROOSTER</a>
+                   <li class=""><a href="/index">Home</a>
+                   <li class=""><a href="/about">About</a>
+                   <li class=""><a href="/press">Press</a>
+                   <li class=""><a href="/photos">Photos</a>
+                   <li class=""><a href="/contact">Contact</a>
+                   <li class="button-find-tokki-mobile"><a href="/find-tokki">Find Tokki</a>
                 </ul>
           
            </div>
@@ -132,17 +133,56 @@ $(function() {
    	<div class="container-fluid">  
         <div class="container-center">
          
-          <a href="index.html"><img class="logo" src="images/logo.png"></a>
-                    <div class="location">Brooklyn, New York</div>
-          <div class="van-brunt">Van Brunt Stillhouse</div>
-          <div class="red-line-small"></div>
-          <div class="text-center">Introducing the first traditional<br>hand crafted rice soju to be<br>MADE IN AMERICA.</div>
-          <a href="about.html" class="ghost-button-transition button-whatistokki button-height">What is Tokki?</a>
-          
-        </div> 
+
+<div id="rooster-icon-new"></div>
+<div id="rooster-logo"></div>
+
+
+
+<div id="rooster-text">
+  Meet the <i><b>Rooster,</b></i> an extremely limited-run traditional Korean soju that's made in America.  Crafted from the omija, or "five-flavored" berry, this tart, sweet, and sometimes bitter spirit could be your new wake-up call, care of Tokki Soju.
+</div>
+
+<div id="rooster-locations">
+  <div id="rooster-locations-block">
+
+<b>GET ROOSTER HERE:</b><br>
+  
+<a href="http://www.astorwines.com/" target="_blank" class="rooster-location-text-link">Astor Wines & Spirits</a><br>
+<a href="https://www.yelp.com/biz/shon-45-wine-and-spirits-new-york" target="_blank" class="rooster-location-text-link">Shon 45 Wine & Spirits</a><br>
+<a href="https://dewinespot.co/" target="_blank" class="rooster-location-text-link">De Wine Spot</a><br>
+<a href="https://grainvine.com/" target="_blank" class="rooster-location-text-link">Grain & Vine</a><br>
+
+
+  </div>
+
+
+  <div id="rooster-locations-block">
+<a href="http://www.drydockny.com//" target="_blank" class="rooster-location-text-link">Dry Dock Wine + Spirits</a><br>
+<a href="https://www.uvawines.com/" target="_blank" class="rooster-location-text-link">Uva Wines & Spirits</a><br>
+<a href="http://www.chelseawinecountry.com/" target="_blank" class="rooster-location-text-link">Chelsea Wine Country</a><br>
+<a href="https://vanderbilt.wine/" target="_blank" class="rooster-location-text-link">Vanderbilt Wine Merchants</a><br>
+
+  </div>
+
+
+  <div id="rooster-locations-block">
+  <a href="https://www.unionsquarewines.com/" target="_blank" class="rooster-location-text-link">Union Square Wine & Spirits</a><br>
+  </div>
+</div>
+
+
+
+
+
+<!--           <div class="text-center">Introducing the first traditional<br>hand crafted rice soju to be<</div>
+          <a href="/about" class="ghost-button-transition button-whatistokki button-height">What is Tokki?</a>
+
+        </div>  -->
+
 <!--End Center Container -->
 
-        <div class-"bg-image"></div>
+
 
     </div>  <!--End Fluid Container -->
 
@@ -161,10 +201,10 @@ $(function() {
     ================================================== 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://tokkisoju.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="http://tokkisoju.com/dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="file:///D|/Users/User/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://tokkisoju.com/assets/js/ie10-viewport-bug-workaround.js"></script>  
+    <script src="file:///D|/Users/User/assets/js/ie10-viewport-bug-workaround.js"></script>  
 
 </body>
 </html>

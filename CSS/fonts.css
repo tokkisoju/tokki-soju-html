@@ -1,0 +1,36 @@
+opia automaticamente l'immagine negli appunti
+frmSettings.chkMarkCrsPos.Caption=Mostra il cursore nell'immagine
+frmSettings.chkShowPreviewBox.Caption=Mostra l'immagine catturata
+frmSettings.tabAutoSave.Caption=Salvataggio Automatico
+frmSettings.lblSavePath.Caption=Salva nella cartella:
+frmSettings.lblAutoSaveNumFrom.Caption=Da:
+frmSettings.lblAutoSaveNumTo.Caption=A:
+frmSettings.lblFormat.Caption=Formato:
+frmSettings.chkAutoSaveActive.Caption=Salvataggio automatico
+frmSettings.rdiAutoSaveNamePrompt.Caption=Nomina manualmente ogni file
+frmSettings.rdiAutoSaveNameFixed.Caption=Nomina il file:
+frmSettings.chkAutoSaveAddSuffix.Caption=Aggiungi il suffisso
+frmSettings.tabSizes.Caption=Rettangoli Fissi
+frmSettings.btnfs_add.Caption=Aggiungi
+frmSettings.btnfs_del.Caption=&Elimina
+frmSettings.btnfs_up.Caption=Sposta &su
+frmSettings.btnfs_dn.Caption=Sposta giu
+frmSettings.btnfs_def.Caption=D&efault
+frmSettings.tabAppearance.Caption=Colori
+frmSettings.lblCloBack.Caption=Colore di sfondo:
+frmSettings.lblCloRuler.Caption=Colore del righello:
+frmSettings.tabSounds.Caption=Suoni
+frmSettings.chkSoundOn.Caption=Suoni Attivi
+frmSettings.chkOneSoundActive.Caption=Questo suono è attivo
+frmSettings.rdiSoundBuiltIn.Caption=Usa suoni prestabiliti
+frmSettings.rdiSoundWaveFile.Caption=Usa questo suono(.wav):
+frmSettings.btnSoundTest.Caption=&Ascolta
+frmSettings.btnSoundSave.Caption=&Salva
+frmSettings.btnHelp.Caption=&Guida
+frmSettings.chkAskOverwrite.Caption=Sovrascrivi i file
+frmSettings.chkAutoPrintActive.Caption=Q Auto &print snapped image
+frmSettings.lblAutoSaveDateFormat.Caption=Q Format:
+frmSettings.chkAutoSaveAddDate.Caption=Q Auto-add date/time suffix
+frmSettings.lblUndoCount.Caption=Q Undo stack size:
+frmSettings.chkRestPgm.Caption=Q &Restore MWSnap after snapping
+frmSetting
